@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<FotoWare_Settings>
+ <Group name="ConfigLocation">
+  <String name="locationType">FwpLogon</String>
+  <Int name="showOffline">0</Int>
+  <String name="logonPath"></String>
+  <String name="serverUrl">am-indexmanager.australiaeast.cloudapp.azure.com</String>
+ </Group>
+</FotoWare_Settings>
