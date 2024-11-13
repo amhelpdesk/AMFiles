@@ -1,0 +1,2 @@
+COMPONENTS=C
+MAINDIR=C:\Program Files (x86)\KESoftware\EMu (AM) (9.0)
