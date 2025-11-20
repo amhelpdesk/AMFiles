@@ -78,10 +78,10 @@ End If
 'Create HKEY_CURRENT_USER Dataset registry settings
 WshShell.RegWrite "HKEY_CURRENT_USER\Software\Micro Focus\Content Manager\AutoGetGlobal", 1, "REG_DWORD" 
 WshShell.RegWrite "HKEY_CURRENT_USER\Software\Micro Focus\Content Manager\AutomaticCheckIn\BypassCheckInOfLimboDocs", 1, "REG_DWORD"
-WshShell.RegWrite "HKEY_CURRENT_USER\Software\Micro Focus\Content Manager\Datasets\DefaultDB", "AU", "REG_SZ"
+WshShell.RegWrite "HKEY_CURRENT_USER\Software\Micro Focus\Content Manager\Datasets\DefaultDB", "AM", "REG_SZ"
 WshShell.RegWrite "HKEY_CURRENT_USER\Software\Micro Focus\Content Manager\Datasets\LoadDefaultDB", "1", "REG_DWORD"
-WshShell.RegWrite "HKEY_CURRENT_USER\Software\Micro Focus\Content Manager\Datasets\AU\Name", "Content Manager UAT", "REG_SZ"
-WshShell.RegWrite "HKEY_CURRENT_USER\Software\Micro Focus\Content Manager\Datasets\AU\PrimaryURL", "https://client.aumuat.cm.kapish.cloud", "REG_SZ"
+WshShell.RegWrite "HKEY_CURRENT_USER\Software\Micro Focus\Content Manager\Datasets\AU\Name", "Content Manager", "REG_SZ"
+WshShell.RegWrite "HKEY_CURRENT_USER\Software\Micro Focus\Content Manager\Datasets\AU\PrimaryURL", "https://client.aumprd.cm.kapish.cloud", "REG_SZ"
 WshShell.RegWrite "HKEY_CURRENT_USER\Software\Micro Focus\Content Manager\Datasets\AU\SecondaryURL", "", "REG_SZ"
 WshShell.RegWrite "HKEY_CURRENT_USER\Software\Micro Focus\Content Manager\Datasets\AU\AuthMechanism", "4", "REG_DWORD"
 WshShell.RegWrite "HKEY_CURRENT_USER\Software\Micro Focus\Content Manager\Datasets\AU\SupportedAuthMechanisms", "0;1;2;4;", "REG_SZ"
@@ -210,4 +210,5 @@ objFilepreferences.Close
 
 
 'Write to the registry to say that this version of the script has run (run once per user per machine)
+
 WshShell.RegWrite "HKCU\Software\Micro Focus\Content Manager\CMSettingsVersion", CMSettingsVersion,"REG_SZ"
